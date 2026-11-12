@@ -13,44 +13,37 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
+<p align="center">
+
 A full-stack, responsive real-time social networking platform built with the MERN stack and WebSockets. Features token-based authentication, role-based access control (User/Admin), complete CRUD post operations, atomic like updates, threaded discussions, and instantaneous timeline synchronization without page refreshes.
+
+</p>
+
+[🚀 Key Features](#-key-features) • [💻 Local Setup](#-local-setup--cloning-guide) • [📡 API Endpoints](#-rest-api-endpoints) • [☁️ Deployment](#️-deployment-guide)
 
 ---
 
 ## 📑 Table of Contents
 
-- [🌐 SocialPulse — Real-Time Social Media Platform](#-socialpulse--real-time-social-media-platform)
-  - [📑 Table of Contents](#-table-of-contents)
-  - [🚀 Key Features](#-key-features)
-  - [🛠️ Tech Stack](#️-tech-stack)
-    - [Frontend (Client)](#frontend-client)
-    - [Backend (Server)](#backend-server)
-  - [🏛️ Architecture \& Data Flow](#️-architecture--data-flow)
-  - [📁 Project Structure](#-project-structure)
-  - [📋 Prerequisites](#-prerequisites)
-  - [💻 Local Setup \& Cloning Guide](#-local-setup--cloning-guide)
-    - [1. Clone Repository](#1-clone-repository)
-    - [2. Backend Setup](#2-backend-setup)
-      - [Configure Environment Variables](#configure-environment-variables)
-      - [Start Backend Server](#start-backend-server)
-    - [3. Frontend Setup](#3-frontend-setup)
-      - [Configure Environment Variables](#configure-environment-variables-1)
-      - [Start Frontend Client](#start-frontend-client)
-    - [4. End-to-End Verification](#4-end-to-end-verification)
-  - [⚙️ Environment Configuration](#️-environment-configuration)
-    - [Backend (`backend/.env`)](#backend-backendenv)
-    - [Frontend (`frontend/.env`)](#frontend-frontendenv)
-  - [📡 REST API Endpoints](#-rest-api-endpoints)
-    - [Authentication Routes (`/api/auth`)](#authentication-routes-apiauth)
-    - [Post Routes (`/api/posts`)](#post-routes-apiposts)
-  - [⚡ WebSocket Events](#-websocket-events)
-  - [☁️ Deployment Guide](#️-deployment-guide)
-    - [Backend on Render](#backend-on-render)
-    - [Frontend on Vercel](#frontend-on-vercel)
-  - [🔍 Troubleshooting \& Common Issues](#-troubleshooting--common-issues)
-  - [🤝 Contributing](#-contributing)
-  - [📄 License](#-license)
-  - [👤 Author](#-author)
+
+<details open>
+<summary><b>📑 Table of Contents</b> (Click to collapse/expand)</summary>
+<br>
+
+| 📌 Overview & Setup | ⚙️ Architecture & Reference |
+| :--- | :--- |
+| • [🚀 Key Features](#-key-features) | • [⚙️ Environment Configuration](#%EF%B8%8F-environment-configuration) |
+| • [🛠️ Tech Stack](#%EF%B8%8F-tech-stack) | • [📡 REST API Endpoints](#-rest-api-endpoints) |
+| • [🏛️ Architecture & Data Flow](#%EF%B8%8F-architecture--data-flow) | • [⚡ WebSocket Events](#-websocket-events) |
+| • [📁 Project Structure](#-project-structure) | • [☁️ Deployment Guide](#%EF%B8%8F-deployment-guide) |
+| • [📋 Prerequisites](#-prerequisites) | • [🔍 Troubleshooting & Common Issues](#-troubleshooting--common-issues) |
+| • [💻 Local Setup & Cloning Guide](#-local-setup--cloning-guide) | • [🤝 Contributing](#-contributing) |
+| &nbsp;&nbsp;&nbsp;↳ [1. Clone Repository](#1-clone-repository) | • [📄 License](#-license) |
+| &nbsp;&nbsp;&nbsp;↳ [2. Backend Setup](#2-backend-setup)  | • [👤 Author](#-author) |
+| &nbsp;&nbsp;&nbsp;↳ [3. Frontend Setup](#3-frontend-setup) | |
+| &nbsp;&nbsp;&nbsp;↳ [4. End-to-End Verification](#4-end-to-end-verification) | |
+
+</details>
 
 ---
 
@@ -163,8 +156,8 @@ Follow these steps to run both the frontend and backend development environments
 Open your terminal, navigate to your desired workspace directory, and clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/SaswataNX05/SocialPulse.git
+cd SocialPulse
 ```
 
 ---
@@ -197,7 +190,7 @@ Open `backend/.env` in your editor and provide your variables:
 ```env
 PORT=5000
 MONGO_URI=mongodb+srv://<db_username>:<db_password>@cluster0.xxxxx.mongodb.net/socialfeed?retryWrites=true&w=majority
-JWT_SECRET=your_super_secret_jwt_key_here
+JWT_SECRET=your_secret_jwt_key_here
 CLIENT_URL=http://localhost:5173
 ```
 
